@@ -15,7 +15,7 @@ const Signup = () => {
       <RegistrationPart/>
       
       <div className="w-1/2 flex items-center justify-center bg-white p-8">
-        <div className="w-full max-w-sm">
+        <div className="w-full max-w-470px">
           <img src={logo} alt="Logo" className="mx-auto mb-6" />
           <h1 className="text-2xl font-bold mb-6 text-gray-800 text-center font-zen">Welcome back to the <br /> Genes Exhibitors Community</h1>
 

@@ -20,7 +20,7 @@ const Login = () => {
       <RegistrationPart/>
 
       <div className="w-1/2 flex items-center justify-center bg-white p-8">
-        <div className="w-full max-w-sm">
+        <div className="w-full max-w-470px">
           <img src={logo} alt="Logo" className="mx-auto mb-6" />
           <h1 className="text-2xl font-bold mb-6 text-gray-800 text-center font-zen">Welcome back to the <br /> Genes Exhibitors Community</h1>
 
@@ -82,11 +82,11 @@ const Login = () => {
             <div className="flex gap-4 w-full">
               <button className="flex items-center justify-center text-gray-500 py-2 px-4 border border-gray-300 bg-gray-100 rounded-full w-full font-zen">
                 <img src={googleLogo} alt="Google Logo" className="w-6 h-6" />
-                Sign in with Google
+                Login In with Google
               </button>
               <button className="flex items-center justify-center text-gray-500 py-2 px-4 border border-gray-300 bg-gray-100 rounded-full w-full font-zen">
                 <img src={facebookLogo} alt="Facebook Logo" className="w-6 h-6" />
-                Sign in with Facebook
+                Login In with Facebook
               </button>
             </div>
           </div>

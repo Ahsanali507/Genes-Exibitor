@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         zen: ['"Zen Kaku Gothic Antique"', 'sans-serif'],
       },
+      maxWidth: {
+        '470px': '470px',
+      },
     },
   },
   plugins: [],
