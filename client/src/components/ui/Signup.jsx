@@ -6,6 +6,7 @@ import hideLogo from '../../assets/icons/hide.svg';
 import unhideLogo from '../../assets/icons/unhide.svg';
 import logo from '../../assets/logo.svg';
 import RegistrationPart from '../shared/RegistrationPart';
+import Button from '../shared/Button';
 
 const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -16,11 +17,11 @@ const Signup = () => {
       <div className="w-1/2 flex items-center justify-center bg-white p-8">
         <div className="w-full max-w-sm">
           <img src={logo} alt="Logo" className="mx-auto mb-6" />
-          <h1 className="text-2xl font-semibold mb-6 text-gray-800 text-center">Welcome back to the Genes Exhibitors Community</h1>
+          <h1 className="text-2xl font-bold mb-6 text-gray-800 text-center font-zen">Welcome back to the <br /> Genes Exhibitors Community</h1>
 
           <form>
             <div className="mb-4">
-              <label htmlFor="email" className="block text-sm font-medium text-gray-500 mb-1">Email or Username</label>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-500 mb-1 font-zen">Email or Username</label>
               <input
                 type="text"
                 id="email"
@@ -32,7 +33,7 @@ const Signup = () => {
             </div>
 
             <div className="mb-4 relative">
-              <label htmlFor="password" className="block text-sm font-medium text-gray-500 mb-1">Password</label>
+              <label htmlFor="password" className="block text-sm font-medium text-gray-500 mb-1 font-zen">Password</label>
               <input
                 type={showPassword ? 'text' : 'password'}
                 id="password"
@@ -47,15 +48,15 @@ const Signup = () => {
                 className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-600"
               >
                 {showPassword ? (
-                  <img src={hideLogo} alt="Google Logo" className="w-4 h-4 mt-4" />
-                ) : (
                   <img src={unhideLogo} alt="Google Logo" className="w-4 h-4 mt-4" />
+                ) : (
+                  <img src={hideLogo} alt="Google Logo" className="w-4 h-4 mt-4" />
                 )}
               </button>
             </div>
 
             <div className="mb-4">
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-500 mb-1">Phone</label>
+              <label htmlFor="phone" className="block text-sm font-medium text-gray-500 mb-1 font-zen">Phone</label>
               <input
                 type="number"
                 id="phone"
@@ -67,7 +68,7 @@ const Signup = () => {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="city" className="block text-sm font-medium text-gray-500 mb-1">City</label>
+              <label htmlFor="city" className="block text-sm font-medium text-gray-500 mb-1 font-zen">City</label>
               <input
                 type="text"
                 id="city"
@@ -79,7 +80,7 @@ const Signup = () => {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="zipcode" className="block text-sm font-medium text-gray-500 mb-1">Zip Code</label>
+              <label htmlFor="zipcode" className="block text-sm font-medium text-gray-500 mb-1 font-zen">Zip Code</label>
               <input
                 type="number"
                 id="zipcode"
@@ -93,15 +94,10 @@ const Signup = () => {
             <div className="flex mb-6">
               <div className="flex items-center">
                 <input type="checkbox" id="rememberMe" className="mr-2" />
-                <label htmlFor="rememberMe" className="text-sm text-gray-700">Remember me</label>
+                <label htmlFor="rememberMe" className="text-sm text-gray-700 font-zen">Remember me</label>
               </div>
               <div className="ml-auto">
-                <button
-                  type="submit"
-                  className="bg-red-600 text-white py-3 px-14 font-semibold hover:bg-red-700"
-                >
-                  Sign Up
-                </button>
+                <Button name="Sign Up"/>
               </div>
             </div>
           </form>
@@ -113,15 +109,15 @@ const Signup = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <p className="text-sm text-gray mb-4"> Already has account?<Link to="/login" className='font-semibold'> Sign in</Link></p>
+            <p className="text-sm text-gray mb-4 font-zen"> Already has account?<Link to="/login" className='font-semibold font-zen'> Sign in</Link></p>
             <div className="flex gap-4 w-full">
-              <button className="flex items-center justify-center text-gray-500 py-2 px-4 border border-gray-300 bg-gray-100 rounded-full w-full">
-                <img src={googleLogo} alt="Google Logo" className="w-5 h-5" />
-                Sign un with Google
+              <button className="flex items-center justify-center text-gray-500 py-2 px-4 border border-gray-300 bg-gray-100 rounded-full w-full font-zen">
+                <img src={googleLogo} alt="Google Logo" className="w-6 h-6" />
+                Sign up with Google
               </button>
-              <button className="flex items-center justify-center text-gray-500 py-2 px-4 border border-gray-300 bg-gray-100 rounded-full w-full">
-                <img src={facebookLogo} alt="Facebook Logo" className="w-5 h-5" />
-                Sign un with Facebook
+              <button className="flex items-center justify-center text-gray-500 py-2 px-4 border border-gray-300 bg-gray-100 rounded-full w-full font-zen">
+                <img src={facebookLogo} alt="Facebook Logo" className="w-6 h-6" />
+                Sign up with Facebook
               </button>
             </div>
           </div>

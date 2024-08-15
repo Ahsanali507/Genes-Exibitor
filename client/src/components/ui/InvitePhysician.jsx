@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../shared/Button";
 
 const InvitePhysician = () => {
     return (
@@ -54,9 +55,7 @@ const InvitePhysician = () => {
                 </div>
             </div>
 
-            <button className="bg-red-600 text-white py-2 px-6 hover:bg-red-700 transition duration-200 w-32">
-                Invite
-            </button>
+            <Button name="Invite"/>
         </div>
     );
 };
