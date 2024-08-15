@@ -14,7 +14,7 @@ function App() {
       <ContextProvider value={{ name: 'App' }}>
         {/* <ErrorBoundary> */}
         <Routes>
-          <Route path="/login" element={<>Hello</>} />
+          <Route path="/login" element={<h3 className="text-3xl text-green-500">Hello</h3>} />
           <Route path="/register" element={<></>} />
         </Routes>
         {/* </ErrorBoundary> */}
