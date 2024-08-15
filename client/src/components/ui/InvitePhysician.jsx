@@ -3,7 +3,7 @@ import React from "react";
 const InvitePhysician = () => {
     return (
         <div className="bg-white p-6 rounded-md shadow-sm">
-            <h2 className="text-2xl font-bold text-[#757575] mb-2">Physician 1</h2>
+            <h2 className="text-2xl font-bold text-[#222B45] mb-2">Physician 1</h2>
             <div className="grid grid-cols-2 gap-8 mb-6">
                 <div>
                     <label className="block text-sm text-gray-500 mb-2" htmlFor="physician2-email">
@@ -28,7 +28,7 @@ const InvitePhysician = () => {
                     />
                 </div>
             </div>
-            <h2 className="text-2xl font-bold text-[#757575] mb-2">Physician 2</h2>
+            <h2 className="text-2xl font-bold text-[#222B45] mb-2">Physician 2</h2>
             <div className="grid grid-cols-2 gap-8 mb-6">
                 <div>
                     <label className="block text-sm text-gray-500 mb-2" htmlFor="physician2-email">

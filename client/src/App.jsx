@@ -1,9 +1,11 @@
 import React from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import './App.css'
+import LoginPage from './pages/LoginPage';
 import DashboardLayout from "./layouts/DashboardLayout";
 import InvitePhysicianPage from "./pages/InvitePhysicianPage";
 import InviteDirectorsPage from "./pages/InviteDirectorsPage";
+import SignupPage from "./pages/SignupPage";
 
 const Context = React.createContext({
   name: 'Default',
@@ -17,8 +19,8 @@ function App() {
       <ContextProvider value={{ name: 'App' }}>
         {/* <ErrorBoundary> */}
         <Routes>
-          <Route path="/login" element={<h3 className="text-3xl text-green-500">Hello</h3>} />
-          <Route path="/register" element={<></>} />
+          <Route path="/login" element={<LoginPage/>} />
+          <Route path="/signup" element={<SignupPage/>} />
           <Route path="/dashboard" element={<DashboardLayout />}>
             <Route path="invite-physicians" element={<InvitePhysicianPage />} />
             <Route path="invite-lab" element={<InviteDirectorsPage />} />
