@@ -13,7 +13,7 @@ const Login = () => {
   const navigate = useNavigate();
   const handleSignIn = (e) => {
     e.preventDefault();
-    navigate('/dashboard');
+    navigate('/dashboard/invite-physicians');
   };
   return (
     <>
